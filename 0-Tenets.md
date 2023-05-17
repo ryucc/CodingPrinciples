@@ -26,5 +26,17 @@ C, maybe
 C++.
 
 Not telling you to writing bubble sort, because it is easier to understand than quick sort. 
-## Second tenet -
-## Third tenet - 
+### Concise ness
+Is shorter code better?
+
+## Second tenet - Unit test coverage
+We are still lacking a measureable this point. Unit test coverage is one of the measureables. There are tool that give you a 0-100% number after you build your code. The later principles aim to push the coverage as close to 100% as possiple.
+
+Searching online for "what is a good test coverage", the answer varies from 60% - 90%. These claims don't include on how coverage optimizes code quality. For example correlating test coverage to another measureable. A service with 10 dependencies would have an higher error rate than a service than 1. There could be a service running for 10 years without unit tests, but has been tested by time and now stable. I double if we graph the 2 numbers, the error rate would have an minimun between 60-90%.
+
+The target might be different from the manager view point. They balence between delivery speed and quality. If is valid to say 80% is good enough, let's push this out. 
+
+My reasoning for pushing 100% is not because well tested code causes less errors.
+My reasoning is because well written code should be easy to test. Structuring the code correctly enables us to mock dependencies easy. Following single responsibility makes the tests shorter. If you struggle to write tests that can reach every line, there is probably something wrong in the source code.
+
+Pushing for 100% gives me confidence that the code is well written.
