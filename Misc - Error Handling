@@ -5,3 +5,6 @@
 ## Recoverable vs not recoverable
 
 ## Early handling vs late handling
+
+## Log an rethrow
+## Swallowing exceptions.
