@@ -17,3 +17,14 @@ There is no way to measure code cleaness. Robert C. Martian wrote in *The Clean 
 I think I can still define code cleaness. Reading others code, sometimes I get the feeling of "Wow, this is exactly how I would write it.". Certain naming conventions, certain choices of structuring code, gives me an feeling of the author follows the same principles as I am. It's natural for me to define code cleaness as people following the same principles would find each other's code clean. If we don't follow the same principles, you can still find my code dirty.
 
 Another measure is if I would understand the code in 3 weeks. Controversially, I feel there are 2 extremes of engineers. One type  tries to understand the whole code base, the more you understand the higher level you are. The principle engineer can tell you an which service decision is made, how the decision flow passes through one service then another, while a junior engineer knows a function they are modifying. The other extreme is to not remember anything at all, but rather be able to understand my code later when I read it. Following my code, I should also be able to find my focus points in log(n), size of the code base time. As the code also servers as way points of where the stuff is. In practical, most people are a mix between the two, but I want to push myself to the latter. After all, my little brain will never catch up to the million lines of code written by humanity. I'd like to preserve it for music, literature, and art instead.
+
+Glorify cleaness as the first tenet. Anything I write later can be ignored, if you have a cleaness argument.
+
+### Cleaness over performance
+Why aren't we writing assembly?
+C, maybe
+C++.
+
+Not telling you to writing bubble sort, because it is easier to understand than quick sort. 
+## Second tenet -
+## Third tenet - 
