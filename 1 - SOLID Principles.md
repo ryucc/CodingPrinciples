@@ -12,4 +12,12 @@ It's straight forward, one class should do one thing. I comply to this principle
 ## Open closed principle
 This one states "software entities (classes, modules, functions, etc.) should be open for extension, but closed for modification." in practice I feel this principle draws a lot of confusion. Should we never fix bugs? Should we never update existing code?
 
-Right now I tend to use this principle on interface design, rather than the code implementation. In the bug fix argument, the expectation of the code does not change, although the behavior changes. For example, if List.getFirst() returns the second element instead of the first, and we do a bug fix. We are honoring the contract we setup through the interface. 
+Right now I tend to use this principle on interface design, rather than the code implementation. In the bug fix argument, the expectation of the code does not change, although the behavior changes. For example, if List.getFirst() returns the second element instead of the first, it's not doing what it says. By doing a bug fix, we are changing the behavior, but honoring the contract we setup through the interface. 
+
+Emphasis on this is a "design phase" principle. I try to design the methods in the interface as essential as possible. Of course we cannot see the future, and requirements may change. But it is nice to identify the basic operations that we always need, designing interfaces to provide these operations would prevent modification in the future.
+
+Another anti-pattern of OCP is the adding of boolean flags. One day a engineer finds an existing method that is similar to what they need, so they add a boolean flag to change the behavior. This is modification to the code. Although it doesn't break clients often, it makes the number of code paths grow by 2^n, back to violating SRP.
+
+I probably don't respect existing contract currently. Too young too simple. And break clients a lot in work.
+
+## Liskov substitution principle
